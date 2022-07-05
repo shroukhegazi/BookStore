@@ -27,7 +27,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['0.0.0.0']
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -126,3 +125,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 AUTH_USER_MODEL = 'users.CustomUser' 
+LOGIN_REDIRECT_URL = 'home'
+LOGOUT_REDIRECT_URL = 'home'
